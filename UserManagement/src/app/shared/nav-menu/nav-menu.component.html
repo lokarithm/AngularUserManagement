@@ -1,6 +1,10 @@
 <nav id="header" class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <span class="font-bold text-xl">Hey</span>
+    <span class="font-bold text-xl">
+      <a [routerLink]="['home']">
+        Home
+      </a>
+    </span>
   </div>
   <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
     <div class="text-sm sm:flex-grow">
@@ -14,7 +18,7 @@
   </div>
   <!--Login-->
   <div>
-      <a href="#" class="inlink-blocktext-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparenthover:text-blue-500 hover:bg-white mt-4 md:mt-0">
+      <a [routerLink]="['login']" class="inlink-blocktext-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">
         Login
       </a>
   </div>
